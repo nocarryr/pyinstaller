@@ -16,6 +16,7 @@ binaries = []
 binaries.extend(qt_plugins_binaries('accessible', namespace='PySide2'))
 binaries.extend(qt_plugins_binaries('iconengines', namespace='PySide2'))
 binaries.extend(qt_plugins_binaries('imageformats', namespace='PySide2'))
+binaries.extend(qt_plugins_binaries('xcbglintegrations', namespace='PySide2'))
 binaries.extend(qt_plugins_binaries('inputmethods', namespace='PySide2'))
 binaries.extend(qt_plugins_binaries('graphicssystems', namespace='PySide2'))
 binaries.extend(qt_plugins_binaries('platforms', namespace='PySide2'))
