@@ -82,18 +82,9 @@ hiddenimports = ['PySide2.QtCore',
                  ]
 
 # TODO: we should parse the Qml files to see what we need to import.
-dirs = ['Qt',
-        # 'QtAudioEngine',
-        # 'QtGraphicalEffects',
-        # 'QtMultiMedia',
-        'QtQml',
-        'QtQuick',
-        'QtQuick.2',
-        # 'QtSensors',
-        # 'QtTest'
-        ]
 
 qmldir = qt5_qml_dir()
+dirs = [dir for dir in os.listdir(qmldir) if os.path.isdir(os.path.join(qmldir, dir))]
 
 # Add base qml directories
 datas = [qt5_qml_data(qmldir, dir) for dir in dirs]
